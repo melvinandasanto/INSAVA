@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91AB95DD-0C76-4573-AAA4-1EBA8A6736B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Usuario</RootNamespace>
+    <AssemblyName>Usuario</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.Base, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.Base.3.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.UserSecrets, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.3.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ClaseBorradoLogico.cs" />
+    <Compile Include="Clases\ClaseCLIENTE.cs" />
+    <Compile Include="Clases\ClaseConexion.cs" />
+    <Compile Include="Clases\ClaseCRUD1.cs" />
+    <Compile Include="Clases\ClaseFiltroActivo.cs" />
+    <Compile Include="Clases\ClaseGrid.cs" />
+    <Compile Include="Clases\ClasePin.cs" />
+    <Compile Include="Clases\ClasePRODUCTO.cs" />
+    <Compile Include="Clases\ClasePROVEEDOR.cs" />
+    <Compile Include="Clases\ClaseROL.cs" />
+    <Compile Include="Clases\ClaseSEMILLA.cs" />
+    <Compile Include="Clases\ClaseTemas.cs" />
+    <Compile Include="Clases\ClaseUSUARIO.cs" />
+    <Compile Include="Clases\ClaseValidacion.cs" />
+    <Compile Include="Clases\DiseñoGlobal.cs" />
+    <Compile Include="Clases\Permisos.cs" />
+    <Compile Include="Clases\ServicioVenta.cs" />
+    <Compile Include="Clases\SesionUsuario.cs" />
+    <Compile Include="FACTURA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACTURA.Designer.cs">
+      <DependentUpon>FACTURA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscarClientes.Designer.cs">
+      <DependentUpon>FBuscarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscarFactura.Designer.cs">
+      <DependentUpon>FBuscarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCLIENTE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FCLIENTE.Designer.cs">
+      <DependentUpon>FCLIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPERFILUSUARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPERFILUSUARIO.Designer.cs">
+      <DependentUpon>FPERFILUSUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPROVEEDOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPROVEEDOR.Designer.cs">
+      <DependentUpon>FPROVEEDOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMENU.Designer.cs">
+      <DependentUpon>FMENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FOLVIDOCONTRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOLVIDOCONTRA.Designer.cs">
+      <DependentUpon>FOLVIDOCONTRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUSUARIO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FUSUARIO.Designer.cs">
+      <DependentUpon>FUSUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FVENTA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FVENTA.Designer.cs">
+      <DependentUpon>FVENTA.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FACTURA.resx">
+      <DependentUpon>FACTURA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscarClientes.resx">
+      <DependentUpon>FBuscarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscarFactura.resx">
+      <DependentUpon>FBuscarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCLIENTE.resx">
+      <DependentUpon>FCLIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPERFILUSUARIO.resx">
+      <DependentUpon>FPERFILUSUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPROVEEDOR.resx">
+      <DependentUpon>FPROVEEDOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMENU.resx">
+      <DependentUpon>FMENU.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOLVIDOCONTRA.resx">
+      <DependentUpon>FOLVIDOCONTRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUSUARIO.resx">
+      <DependentUpon>FUSUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVENTA.resx">
+      <DependentUpon>FVENTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProducto.resx">
+      <DependentUpon>UCProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BasedeDatos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UCProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProducto.Designer.cs">
+      <DependentUpon>UCProducto.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+</Project>
