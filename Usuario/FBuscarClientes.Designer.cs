@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuscarClientes));
             this.txtBuscarCliente = new System.Windows.Forms.TextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.lblFBC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
@@ -57,16 +56,6 @@
             this.dgvClientes.Size = new System.Drawing.Size(694, 235);
             this.dgvClientes.TabIndex = 1;
             // 
-            // lblFBC
-            // 
-            this.lblFBC.AutoSize = true;
-            this.lblFBC.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFBC.Location = new System.Drawing.Point(73, 20);
-            this.lblFBC.Name = "lblFBC";
-            this.lblFBC.Size = new System.Drawing.Size(331, 46);
-            this.lblFBC.TabIndex = 2;
-            this.lblFBC.Text = "Buscar Clientes";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -83,7 +72,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 796);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblFBC);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.txtBuscarCliente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -101,7 +89,6 @@
 
         private System.Windows.Forms.TextBox txtBuscarCliente;
         private System.Windows.Forms.DataGridView dgvClientes;
-        private System.Windows.Forms.Label lblFBC;
         private System.Windows.Forms.Label label1;
     }
 }
