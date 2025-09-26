@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBuscarClientes));
             this.txtBuscarCliente = new System.Windows.Forms.TextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscarCliente
             // 
-            this.txtBuscarCliente.Location = new System.Drawing.Point(124, 222);
+            this.txtBuscarCliente.Location = new System.Drawing.Point(83, 142);
+            this.txtBuscarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBuscarCliente.Name = "txtBuscarCliente";
-            this.txtBuscarCliente.Size = new System.Drawing.Size(1039, 31);
+            this.txtBuscarCliente.Size = new System.Drawing.Size(694, 22);
             this.txtBuscarCliente.TabIndex = 0;
             this.txtBuscarCliente.TextChanged += new System.EventHandler(this.txtBuscarCliente_TextChanged);
             // 
@@ -47,33 +47,23 @@
             // 
             this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(124, 294);
+            this.dgvClientes.Location = new System.Drawing.Point(83, 188);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 82;
             this.dgvClientes.RowTemplate.Height = 33;
-            this.dgvClientes.Size = new System.Drawing.Size(1041, 367);
+            this.dgvClientes.Size = new System.Drawing.Size(694, 235);
             this.dgvClientes.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1164, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(681, 43);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Buscar por ID, nombre, telefono, etc.";
             // 
             // FBuscarClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1923, 1244);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.txtBuscarCliente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FBuscarClientes";
             this.Text = "FBuscarClientes";
             this.Load += new System.EventHandler(this.FBuscarClientes_Load);
@@ -87,6 +77,5 @@
 
         private System.Windows.Forms.TextBox txtBuscarCliente;
         private System.Windows.Forms.DataGridView dgvClientes;
-        private System.Windows.Forms.Label label1;
     }
 }
