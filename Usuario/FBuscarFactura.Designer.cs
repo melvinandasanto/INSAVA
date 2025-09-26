@@ -37,44 +37,45 @@
             // 
             // txtBuscarFactura
             // 
-            this.txtBuscarFactura.Location = new System.Drawing.Point(44, 164);
-            this.txtBuscarFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscarFactura.Location = new System.Drawing.Point(30, 87);
+            this.txtBuscarFactura.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txtBuscarFactura.Name = "txtBuscarFactura";
-            this.txtBuscarFactura.Size = new System.Drawing.Size(807, 26);
+            this.txtBuscarFactura.Size = new System.Drawing.Size(539, 20);
             this.txtBuscarFactura.TabIndex = 0;
             // 
             // dgvFacturas
             // 
             this.dgvFacturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturas.Location = new System.Drawing.Point(44, 218);
-            this.dgvFacturas.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvFacturas.Location = new System.Drawing.Point(29, 142);
+            this.dgvFacturas.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dgvFacturas.Name = "dgvFacturas";
             this.dgvFacturas.RowHeadersWidth = 82;
             this.dgvFacturas.RowTemplate.Height = 33;
-            this.dgvFacturas.Size = new System.Drawing.Size(808, 370);
+            this.dgvFacturas.Size = new System.Drawing.Size(539, 240);
             this.dgvFacturas.TabIndex = 1;
             // 
             // lblFBC
             // 
             this.lblFBC.AutoSize = true;
             this.lblFBC.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFBC.Location = new System.Drawing.Point(35, 31);
+            this.lblFBC.Location = new System.Drawing.Point(23, 20);
+            this.lblFBC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFBC.Name = "lblFBC";
-            this.lblFBC.Size = new System.Drawing.Size(374, 55);
+            this.lblFBC.Size = new System.Drawing.Size(252, 37);
             this.lblFBC.TabIndex = 4;
             this.lblFBC.Text = "Buscar Facturas";
             // 
             // FBuscarFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 884);
+            this.ClientSize = new System.Drawing.Size(736, 487);
             this.Controls.Add(this.lblFBC);
             this.Controls.Add(this.dgvFacturas);
             this.Controls.Add(this.txtBuscarFactura);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "FBuscarFactura";
             this.Text = "FBuscarFactura";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
