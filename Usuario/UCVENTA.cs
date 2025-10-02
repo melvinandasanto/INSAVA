@@ -12,14 +12,14 @@ using Usuario.Clases;
 
 namespace Usuario
 {
-    public partial class FVENTA : UserControl
+    public partial class UCVENTA : UserControl
     {
         private ClaseConexion conexion;
         private DataTable productosOriginal;
         private DataGridView dgvMaquila;
         private List<TextBox> CamposDecimales;
 
-        public FVENTA()
+        public UCVENTA()
         {
             InitializeComponent();
             conexion = new ClaseConexion();

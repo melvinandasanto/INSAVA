@@ -1,6 +1,6 @@
 ﻿namespace Usuario
 {
-    partial class FCLIENTE
+    partial class UCCLIENTE
     {
         /// <summary>
         /// Required designer variable.

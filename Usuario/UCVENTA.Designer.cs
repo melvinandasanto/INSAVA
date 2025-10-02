@@ -1,6 +1,6 @@
 namespace Usuario
 {
-    partial class FVENTA
+    partial class UCVENTA
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

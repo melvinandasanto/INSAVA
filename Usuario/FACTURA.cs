@@ -100,7 +100,7 @@ namespace Usuario
         {
             using (Form frm = new Form())
             {
-                FCLIENTE clienteControl = new FCLIENTE();
+                UCCLIENTE clienteControl = new UCCLIENTE();
                 clienteControl.Dock = DockStyle.Fill;
                 frm.Controls.Add(clienteControl);
                 frm.StartPosition = FormStartPosition.CenterParent;

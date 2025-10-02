@@ -104,11 +104,11 @@
     <Compile Include="FBuscarFactura.Designer.cs">
       <DependentUpon>FBuscarFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="FCLIENTE.cs">
+    <Compile Include="UCCLIENTE.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FCLIENTE.Designer.cs">
-      <DependentUpon>FCLIENTE.cs</DependentUpon>
+      <DependentUpon>UCCLIENTE.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
@@ -153,17 +153,17 @@
     <Compile Include="FOLVIDOCONTRA.Designer.cs">
       <DependentUpon>FOLVIDOCONTRA.cs</DependentUpon>
     </Compile>
-    <Compile Include="FUSUARIO.cs">
+    <Compile Include="UCUSUARIO.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FUSUARIO.Designer.cs">
-      <DependentUpon>FUSUARIO.cs</DependentUpon>
+      <DependentUpon>UCUSUARIO.cs</DependentUpon>
     </Compile>
-    <Compile Include="FVENTA.cs">
+    <Compile Include="UCVENTA.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FVENTA.Designer.cs">
-      <DependentUpon>FVENTA.cs</DependentUpon>
+    <Compile Include="UCVENTA.Designer.cs">
+      <DependentUpon>UCVENTA.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FACTURA.resx">
       <DependentUpon>FACTURA.cs</DependentUpon>
@@ -175,7 +175,7 @@
       <DependentUpon>FBuscarFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FCLIENTE.resx">
-      <DependentUpon>FCLIENTE.cs</DependentUpon>
+      <DependentUpon>UCCLIENTE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
@@ -202,10 +202,10 @@
       <DependentUpon>FOLVIDOCONTRA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FUSUARIO.resx">
-      <DependentUpon>FUSUARIO.cs</DependentUpon>
+      <DependentUpon>UCUSUARIO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FVENTA.resx">
-      <DependentUpon>FVENTA.cs</DependentUpon>
+    <EmbeddedResource Include="UCVENTA.resx">
+      <DependentUpon>UCVENTA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCProducto.resx">
       <DependentUpon>UCProducto.cs</DependentUpon>

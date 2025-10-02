@@ -1,6 +1,6 @@
 ﻿namespace Usuario
 {
-    partial class FUSUARIO
+    partial class UCUSUARIO
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

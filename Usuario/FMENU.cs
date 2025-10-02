@@ -24,9 +24,9 @@ namespace Usuario
         public string UsuarioActual { get; set; } // <-- Propiedad agregada
 
         // Declaración de los UserControls
-        private FUSUARIO ucusuario = null;
-        private FVENTA ucFVENTA = null;
-        private FCLIENTE uccliente = null;
+        private UCUSUARIO ucusuario = null;
+        private UCVENTA ucFVENTA = null;
+        private UCCLIENTE uccliente = null;
         private Usuario.UCProducto ucproducto = null;
 
         // Campo para guardar la referencia al perfil abierto
