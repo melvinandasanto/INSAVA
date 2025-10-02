@@ -65,7 +65,7 @@
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(1440, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(1440, 50);
             this.toolStrip1.TabIndex = 15;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.toolStrip1_MouseDown);
@@ -76,7 +76,7 @@
             this.LlamaVentas.Image = ((System.Drawing.Image)(resources.GetObject("LlamaVentas.Image")));
             this.LlamaVentas.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.LlamaVentas.Name = "LlamaVentas";
-            this.LlamaVentas.Size = new System.Drawing.Size(160, 41);
+            this.LlamaVentas.Size = new System.Drawing.Size(160, 44);
             this.LlamaVentas.Text = "Ventas";
             this.LlamaVentas.Click += new System.EventHandler(this.LlamaVentas_Click);
             // 
@@ -87,7 +87,7 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(46, 41);
+            this.toolStripButton3.Size = new System.Drawing.Size(46, 44);
             this.toolStripButton3.Text = "btnCerrar";
             this.toolStripButton3.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
@@ -98,7 +98,7 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(46, 41);
+            this.toolStripButton5.Size = new System.Drawing.Size(46, 44);
             this.toolStripButton5.Text = "btnMinimizar";
             this.toolStripButton5.Click += new System.EventHandler(this.Minimizar_Click);
             // 
@@ -109,7 +109,7 @@
             this.CambiaTema.Image = ((System.Drawing.Image)(resources.GetObject("CambiaTema.Image")));
             this.CambiaTema.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CambiaTema.Name = "CambiaTema";
-            this.CambiaTema.Size = new System.Drawing.Size(46, 41);
+            this.CambiaTema.Size = new System.Drawing.Size(46, 44);
             this.CambiaTema.Text = "tsbtnCambiarTema";
             this.CambiaTema.Click += new System.EventHandler(this.tsbtnCambiarTema_Click);
             // 
@@ -119,7 +119,7 @@
             this.LlamaClientes.Image = ((System.Drawing.Image)(resources.GetObject("LlamaClientes.Image")));
             this.LlamaClientes.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.LlamaClientes.Name = "LlamaClientes";
-            this.LlamaClientes.Size = new System.Drawing.Size(180, 41);
+            this.LlamaClientes.Size = new System.Drawing.Size(180, 44);
             this.LlamaClientes.Text = "Clientes";
             this.LlamaClientes.Click += new System.EventHandler(this.LlamaClientes_Click);
             // 
@@ -128,7 +128,7 @@
             this.LlamaInventario.Image = ((System.Drawing.Image)(resources.GetObject("LlamaInventario.Image")));
             this.LlamaInventario.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.LlamaInventario.Name = "LlamaInventario";
-            this.LlamaInventario.Size = new System.Drawing.Size(209, 41);
+            this.LlamaInventario.Size = new System.Drawing.Size(209, 44);
             this.LlamaInventario.Text = "Inventario";
             this.LlamaInventario.Click += new System.EventHandler(this.LlamaInventario_Click);
             // 
@@ -138,7 +138,7 @@
             this.LlamaUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("LlamaUsuarios.Image")));
             this.LlamaUsuarios.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.LlamaUsuarios.Name = "LlamaUsuarios";
-            this.LlamaUsuarios.Size = new System.Drawing.Size(191, 41);
+            this.LlamaUsuarios.Size = new System.Drawing.Size(191, 44);
             this.LlamaUsuarios.Text = "Usuarios";
             this.LlamaUsuarios.Click += new System.EventHandler(this.LlamaUsuarios_Click);
             // 
@@ -147,7 +147,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(203, 41);
+            this.toolStripButton1.Size = new System.Drawing.Size(203, 44);
             this.toolStripButton1.Text = "Buscador";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -155,9 +155,9 @@
             // 
             this.panelContenedor.Controls.Add(this.toolStrip2);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 47);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 50);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1440, 762);
+            this.panelContenedor.Size = new System.Drawing.Size(1440, 759);
             this.panelContenedor.TabIndex = 18;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
