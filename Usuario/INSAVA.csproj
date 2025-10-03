@@ -113,7 +113,7 @@
     <Compile Include="UCCLIENTE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FCLIENTE.Designer.cs">
+    <Compile Include="UCCLIENTE.Designer.cs">
       <DependentUpon>UCCLIENTE.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInicio.cs">
@@ -180,7 +180,7 @@
     <EmbeddedResource Include="FBuscarFactura.resx">
       <DependentUpon>FBuscarFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FCLIENTE.resx">
+    <EmbeddedResource Include="UCCLIENTE.resx">
       <DependentUpon>UCCLIENTE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">

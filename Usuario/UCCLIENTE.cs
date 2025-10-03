@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Usuario
 {
-    public partial class FCLIENTE : UserControl
+    public partial class UCCLIENTE : UserControl
     {
         private ClaseCLIENTE cliente;
         private ClaseConexion clienteConexion;
@@ -15,7 +15,7 @@ namespace Usuario
         private List<ComboBox> CombosNumericos;
         private List<TextBox> CamposNumericos;
 
-        public FCLIENTE()
+        public UCCLIENTE()
         {
             InitializeComponent();
             cliente = new ClaseCLIENTE();

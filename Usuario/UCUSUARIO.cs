@@ -13,7 +13,7 @@ using Usuario.Clases;
 
 namespace Usuario
 {
-    public partial class FUSUARIO : UserControl
+    public partial class UCUSUARIO : UserControl
     {
         private ClaseConexion conexion;
         private ClaseUSUARIO usuario;
@@ -22,7 +22,7 @@ namespace Usuario
         private List<ComboBox> CamposNumericos;
         private Dictionary<string, object> valoresOriginales;
 
-        public FUSUARIO()
+        public UCUSUARIO()
         {
             InitializeComponent();
             usuario = new ClaseUSUARIO();
