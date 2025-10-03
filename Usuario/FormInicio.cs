@@ -24,8 +24,21 @@ namespace Usuario
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+            // Crear instancia del formulario Login
+            Login login = new Login();
 
+            // Ocultar la pantalla de inicio
+            this.Hide();
+
+            // Mostrar el login
+            login.ShowDialog();
+
+            // Cuando se cierre el login, se cierra la pantalla de inicio también
+            this.Close();
         }
+
+        
 
         private void FormInicio_Load(object sender, EventArgs e)
         {
